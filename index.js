@@ -54,7 +54,18 @@ app.get('/knex', (req, res, next) => {
 });
 */
 
+// Deployment for Uni Assignment
+/* 
 const server = https.createServer(credentials, app);
 server.listen(3000, () => {
   console.log('HTTPS Server running on https://localhost:3000');
+});
+*/
+
+// Deployment for Render
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
